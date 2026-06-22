@@ -1,25 +1,174 @@
 body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    padding:40px;
+
+font-family:Arial,sans-serif;
+margin:0;
+background:#e6f2ff;
+
 }
 
-textarea{
-    width:300px;
-    height:100px;
-    padding:10px;
+
+
+/* Navigation */
+
+nav{
+
+background:#333;
+padding:15px;
+text-align:center;
+
 }
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:15px;
+
+}
+
+
+nav a:hover{
+
+color:yellow;
+
+}
+
+
+
+/* Hero */
+
+.hero{
+
+text-align:center;
+padding:80px;
+
+}
+
+
+.profile-pic{
+
+width:150px;
+height:150px;
+border-radius:50%;
+
+}
+
+
+.hero h1{
+
+color:#0066cc;
+
+}
+
 
 button{
-    margin-top:10px;
-    padding:10px 20px;
-    cursor:pointer;
+
+padding:12px 20px;
+background:#0066cc;
+color:white;
+border:none;
+border-radius:5px;
+
 }
 
-#notesContainer p{
-    background:#f2f2f2;
-    width:300px;
-    margin:10px auto;
-    padding:10px;
-    border-radius:5px;
+
+button:hover{
+
+background:#004999;
+
+}
+
+
+
+/* About */
+
+#about{
+
+text-align:center;
+padding:50px;
+
+}
+
+
+
+/* Skills */
+
+#skills{
+
+text-align:center;
+padding:50px;
+
+}
+
+
+.skill-box{
+
+display:inline-block;
+
+background:#0066cc;
+
+color:white;
+
+padding:15px 25px;
+
+margin:10px;
+
+border-radius:8px;
+
+}
+
+
+.skill-box:hover{
+
+background:#004999;
+
+}
+
+
+
+/* Projects */
+
+#projects{
+
+text-align:center;
+padding:50px;
+
+}
+
+
+.project-card{
+
+background:white;
+
+width:300px;
+
+padding:20px;
+
+margin:20px auto;
+
+border-radius:10px;
+
+box-shadow:0 0 10px lightgray;
+
+}
+
+
+.project-card:hover{
+
+transform:scale(1.05);
+
+transition:.3s;
+
+}
+
+
+
+/* Contact */
+
+#contact{
+
+text-align:center;
+padding:50px;
+
 }

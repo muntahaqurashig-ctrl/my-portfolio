@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>My Notes</h1>
+
+    <textarea id="noteInput" placeholder="Write your note here"></textarea>
+
+    <br>
+
+    <button onclick="saveNote()">Save Note</button>
+
+    <div id="notesContainer"></div>
+
+    <script>
+
+        function saveNote(){
+
+            let note = document.getElementById("noteInput").value;
+
+            if(note === ""){
+                alert("Please write a note!");
+                return;
+            }
+
+            let p = document.createElement("p");
+            p.textContent = note;
+
+            document.getElementById("notesContainer").appendChild(p);
+
+            document.getElementById("noteInput").value = "";
+
+        }
+
+    </script>
+
+</body>
+</html>

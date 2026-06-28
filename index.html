@@ -1,107 +1,24 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Muntaha Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<div class="container">
+    <h1>Stopwatch</h1>
 
+    <h2 id="display">00:00:00</h2>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+</div>
 
-        <img src="https://via.placeholder.com/150"
-            class="profile-pic">
-
-        <h1>Hi, I'm Muntaha</h1>
-
-        <p>Future Web Developer</p>
-
-        <button>Hire Me</button>
-
-    </section>
-
-
-
-    <!-- About Section -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am learning Web Development.
-            I love creating websites and JavaScript projects.
-        </p>
-
-    </section>
-
-
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
-        <div class="skill-box">JavaScript</div>
-        <div class="skill-box">GitHub</div>
-
-    </section>
-
-
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-
-        <div class="project-card">
-            To-Do List App
-        </div>
-
-
-        <div class="project-card">
-            Calculator App
-        </div>
-
-
-        <div class="project-card">
-            Notes App
-        </div>
-
-
-        <div class="project-card">
-            Rock Paper Scissors
-        </div>
-
-    </section>
-
-
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>Email: muntaha@example.com</p>
-
-    </section>
-
-
+<script src="script.js"></script>
 
 </body>
-
-</html>v
+</html>

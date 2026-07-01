@@ -1,22 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopEasy</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Stopwatch</h1>
+<nav>
 
-    <h2 id="display">00:00:00</h2>
+<h2>ShopEasy</h2>
 
-    <button onclick="startTimer()">Start</button>
-    <button onclick="stopTimer()">Stop</button>
-    <button onclick="resetTimer()">Reset</button>
-</div>
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Products</a></li>
+
+<li><a href="#">Categories</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Discover Amazing Products</h1>
+
+<p>Best prices. Fast delivery. Great quality.</p>
+
+<button>Shop Now</button>
+
+</section>
+<!-- Products Section -->
+<!-- Categories -->
+
+<section class="categories">
+
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            👟
+            <h3>Shoes</h3>
+        </div>
+
+        <div class="category-card">
+            ⌚
+            <h3>Watches</h3>
+        </div>
+
+        <div class="category-card">
+            📱
+            <h3>Phones</h3>
+        </div>
+
+        <div class="category-card">
+            💻
+            <h3>Laptops</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+
+    <h2>Subscribe for Offers</h2>
+
+    <p>Get the latest discounts and new arrivals.</p>
+
+    <input type="email" placeholder="Enter your email">
+
+    <button>Subscribe</button>
+
+</section>
+
+<section class="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Shoes">
+            <h3>Running Shoes</h3>
+            <p class="price">$79</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">$129</p>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Phone">
+            <h3>Smart Phone</h3>
+            <p class="price">$499</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+<footer>
+    <p>© 2026 ShopEasy. All Rights Reserved.</p>
+</footer>
 
 <script src="script.js"></script>
 

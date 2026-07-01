@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Gym</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff4d4d;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff4d4d;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#ff4d4d;
+    color:white;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:5px;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#e63939;
+}
+
+/* Sections */
+
+section{
+    padding:70px 8%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+/* Cards */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+/* Trainer */
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Membership */
+
+.plan{
+    background:#111;
+    color:white;
+}
+
+.plan h3{
+    color:#ff4d4d;
+}
+
+/* Contact */
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+form button:hover{
+    background:#e63939;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav>
+<div class="logo">PowerFit Gym</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#trainers">Trainers</a></li>
+<li><a href="#membership">Membership</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+<div>
+<h1>Transform Your Body</h1>
+<p>Become stronger, healthier, and more confident.</p>
+<a href="#membership" class="btn">Join Now</a>
+</div>
+</section>
+
+<!-- Services -->
+
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h1>💪</h1>
+<h3>Strength Training</h3>
+<p>Build muscle and increase your strength with expert guidance.</p>
+</div>
+
+<div class="card">
+<h1>🏃</h1>
+<h3>Cardio</h3>
+<p>Improve endurance and burn calories with cardio workouts.</p>
+</div>
+
+<div class="card">
+<h1>🧘</h1>
+<h3>Yoga</h3>
+<p>Relax your mind and body while improving flexibility.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Trainers -->
+
+<section id="trainers">
+<h2>Our Trainers</h2>
+
+<div class="card-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80" alt="">
+<h3>John Smith</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=600&q=80" alt="">
+<h3>Sarah Johnson</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="">
+<h3>Michael Lee</h3>
+</div>
+
+</div>
+</section>
+
+<!-- Membership -->
+
+<section id="membership">
+<h2>Membership Plans</h2>
+
+<div class="card-container">
+
+<div class="card plan">
+<h3>Basic</h3>
+<h1>$19/mo</h1>
+<p>Gym Access</p>
+</div>
+
+<div class="card plan">
+<h3>Premium</h3>
+<h1>$39/mo</h1>
+<p>Gym + Classes</p>
+</div>
+
+<div class="card plan">
+<h3>VIP</h3>
+<h1>$59/mo</h1>
+<p>All Access + Personal Trainer</p>
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+<p>© 2026 PowerFit Gym. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
